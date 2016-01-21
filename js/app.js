@@ -12,3 +12,11 @@ app.controller('PostsController', function($scope, $http) {
       console.log('==============error')
     })
 })
+
+app.controller('NewPostController', function($scope) {
+  $scope.comment = {
+    content: 'foo',
+    author: 'guy',
+    date_created: new Date()
+  }
+})
