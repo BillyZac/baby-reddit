@@ -12,3 +12,21 @@ body {
 .post {
   border-bottom: 3px solid #ddd;
 }
+
+.vote-up,
+.vote-down
+ {
+  display: inline-block;
+  width: 10%;
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.nogurlzallowed {
+  width: 40px;
+  height: 40px;
+  background: aqua;
+  font-size: 18px;
+  color: #fff;
+}

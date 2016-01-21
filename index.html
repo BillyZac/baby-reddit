@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="./css/master.css" media="screen" charset="utf-8">
   </head>
   <body>
+    <div ng-app="votes">
+      <p>Votes: {{ voteCount }}</p>
+      <span
+        class="nogurlzallowed vote-up"
+        ng-click="voteCount = voteCount + 1">
+        Up
+      </span>
+      <span
+        class="nogurlzallowed vote-down"
+        ng-click="voteCount = voteCount - 1">
+        Down
+      </span>
+    </div>
     <div ng-controller="PostsController">
       <div>
         <label for="search">Search</label>
