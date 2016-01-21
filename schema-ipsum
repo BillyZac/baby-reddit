@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "ipsum": "id"
+    },
+    "title": {
+      "type": "string",
+      "ipsum": "sentence"
+    },
+    "author": {
+      "type": "string",
+      "ipsum": "name"
+    },
+    "image_url": {
+      "type": "string",
+      "enum": ["http://lorempixel.com/400/400/"]
+    },
+    "description": {
+      "type": "string",
+      "ipsum": "paragraph"
+    },
+    "date_created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "votes": {
+      "type": "integer"
+    },
+    "comments": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer" },
+        "content": {
+          "type": "string",
+          "ipsum": "sentence"
+          },
+        "author": {
+          "type": "string",
+          "ipsum": "name"
+        },
+        "date_created": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}
+                
