@@ -8,10 +8,11 @@
   </head>
   <body>
     <div ng-controller="PostsController">
-      <div class="form-group">
+      <div>
         <label for="search">Search</label>
-        <input type="text" class="form-control" id="search" placeholder="Search..." ng-model="search">
+        <input type="text"id="search" placeholder="Search..." ng-model="search">
       </div>
+
       <div class="post" ng-repeat="post in posts | filter : search" >
         <p>
           {{ post.title }}
