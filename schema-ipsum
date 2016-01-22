@@ -19,7 +19,7 @@
     },
     "description": {
       "type": "string",
-      "ipsum": "paragraph"
+      "ipsum": "sentence"
     },
     "date_created": {
       "type": "string",
@@ -29,23 +29,25 @@
       "type": "integer"
     },
     "comments": {
-      "type": "object",
-      "properties": {
-        "id": { "type": "integer" },
-        "content": {
-          "type": "string",
-          "ipsum": "sentence"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "content": {
+            "type": "string",
+            "ipsum": "sentence"
+            },
+          "author": {
+            "type": "string",
+            "ipsum": "name"
           },
-        "author": {
-          "type": "string",
-          "ipsum": "name"
-        },
-        "date_created": {
-          "type": "string",
-          "format": "date-time"
+          "date_created": {
+            "type": "string",
+            "format": "date-time"
+          }
         }
       }
     }
   }
 }
-                

@@ -15,9 +15,10 @@ app.controller('PostsController', function($scope, $http) {
   .then(function(){
     // New post
     $scope.newPost = {}
+    // When user clicks "Create post" button, this happens:
     $scope.addPost = function () {
       $scope.newPost.date_created = Date.now()
-      $scope.newPost.votes = 0 // Come back to this. Maybe votes is in the wrong place?
+      $scope.newPost.votes = 0
       $scope.newPost.comments = []
 
       // Push into posts array. In the real world, this should make an ajax call to the server/database with a post request.
@@ -27,16 +28,16 @@ app.controller('PostsController', function($scope, $http) {
       $scope.newPost = {}
     }
 
-    // New
-    })
-})
+    // New comment
+    $scope.newComment = {}
+    // When user clicks "Submit comment" button, this happens:
+    $scope.addComment = function () {
+      $scope.newComment.date_created = Date.now()
+      // Push into posts array. In the real world, this should make an ajax call to the server/database with a post request.
+      $scope.posts.comments.push($scope.newComment)
 
-// Pretty sure I need to move this to the post. A comment is always a child of a post.
-app.controller('NewCommentController', function($scope) {
-  $scope.comment = {
-    content: 'foo',
-    author: 'guy',
-    date_created: new Date()
-  }
-  // Define a new comment function that pushes a comment onto the posts.comments array.
+      // Clear the ground for the next new post.
+      $scope.newPost = {}
+    }
+    })
 })

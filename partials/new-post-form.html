@@ -1,5 +1,5 @@
 <button type="button" name="button" ng-click="showNewPostForm = true" ng-show="!showNewPostForm">Show new post form</button>
-<form class="new-post" ng-submit="addPost()" ng-show="true || showNewPostForm">
+<form class="new-post" ng-submit="addPost()" ng-show="showNewPostForm">
   <label for="post-title">Title</label>
   <input type="text" name="post-title" ng-model="newPost.title" ng-required="true" ng-maxlength="40">
 
