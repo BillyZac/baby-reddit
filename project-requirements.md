@@ -13,7 +13,8 @@
 - A user can click to view existing comments on a specific post
 - The number of comments is correctly pluralized
 - A user can add a new comment to a specific post
-- The new post form and comment forms can be toggled on and off
+- The new post form can be toggled on and off
+- Comment form can be toggled on and off
 - x A user can search through posts
 - A user can sort posts by votes, date, and title.
 - Animate posts as they are added and removed from the search results.
