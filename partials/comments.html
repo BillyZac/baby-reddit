@@ -1,6 +1,17 @@
-<div class="comments">
+<button type="button" name="button" ng-click="showComments = true" ng-show="!showComments">Show comments</button>
+<div class="comments" ng-show="showComments">
   <h2>Comments</h2>
-  <div class="post" ng-repeat="comment in post.comments" >
+  <h3>Make a comment</h3>
+  <form class="new-comment" ng-submit="addComment(post)">
+    <label for="comment-author">Author</label>
+    <input type="text" name="comment-author" ng-model="newComment.author" ng-required="true" ng-minlength="2" ng-maxlength="40">
+
+    <label for="comment-content">Description</label>
+    <input type="text" name="comment-content" ng-model="newComment.content" ng-required="true" ng-minlength="3" ng-maxlength="140">
+
+    <button type="submit">Create comment</button>
+  </form>
+  <div class="post" ng-repeat="comment in post.comments track by $index" >
     <p>{{ comment.content }}</p>
     <p>By: {{ comment.author }}</p>
   </div>
