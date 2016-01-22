@@ -2,13 +2,13 @@
 
 - X Each post has a title, author, image, and description.
 - Each post's date/time is displayed nicely: "Yesterday at 3:09pm", "Last Thursday at 4:42am", etc. You will need an external library. Watch the video for more details.
+  - x Basic formatting with angular date filter
+  - Show the nice stuff, like 'Yesterday', using moment
 - X A user can upvote/downvote posts
-- Posts dynamically reorder according to number of votes
 
+- x Posts dynamically reorder according to number of votes
 
-- A user can create new posts
-
-
+- x A user can create new posts
 - A user cannot create a new post if any of the 4 inputs are blank. Research angular validations. See the video for an example implementation.
 - A user can click to view existing comments on a specific post
 - The number of comments is correctly pluralized

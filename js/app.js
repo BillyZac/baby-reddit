@@ -1,6 +1,7 @@
 var app = angular.module('app', []);
 
 app.controller('PostsController', function($scope, $http) {
+  $scope.orderProp = '-votes' // Most votes go to the top of the list.
   $http({
     method: 'GET',
     url: './data/postsData.json'
