@@ -1,0 +1,11 @@
+<form ng-submit="submitFav()" name="favPieForm" ng-controller="testPost">
+  <input name="name" type="text" ng-model="favoriteForm.name">
+  <input name="favorite_pie" type="text" ng-model="favoriteForm.favoritePie">
+  <input type="submit">
+</form>
+<p>
+  Name: {{favoriteForm.name}}<br>
+</p>
+<p>
+  Favorite Pi: {{favoriteForm.favoritePie}}
+</p>

@@ -10,7 +10,8 @@ body {
 }
 
 .post {
-  border-bottom: 3px solid #ddd;
+  border: 3px solid #ddd;
+  margin-bottom: 10px;
 }
 
 .vote-up,
@@ -29,4 +30,13 @@ body {
   background: aqua;
   font-size: 18px;
   color: #fff;
+}
+
+input,
+label {
+  display: block;
+}
+
+.new-post {
+  margin-bottom: 50px;
 }

@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/master.css" media="screen" charset="utf-8">
   </head>
   <body>
+    <ng-include
+      src="'./partials/new-post-form.html'"
+      [onload="string"]
+      [autoscroll="string"]>
+    </ng-include>
     <div ng-controller="PostsController">
       <div>
         <label for="search">Search</label>
@@ -46,7 +51,7 @@
             Down
           </span>
         </div>
-        <div ng-controller="NewPostController">
+        <div ng-controller="NewCommentController">
           <input type="text" ng-model="comment.content">
           <input type="text" ng-model="comment.author">
           <div>
