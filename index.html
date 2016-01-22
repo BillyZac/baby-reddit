@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./css/master.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <ng-include
-      src="'./partials/new-post-form.html'"
-      [onload="string"]
-      [autoscroll="string"]>
-    </ng-include>
     <div ng-controller="PostsController">
+      <ng-include
+        src="'./partials/new-post-form.html'"
+        [onload="string"]
+        [autoscroll="string"]>
+      </ng-include>
       <div>
         <label for="search">Search</label>
         <input type="text"id="search" placeholder="Search..." ng-model="search">
