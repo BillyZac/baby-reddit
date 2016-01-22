@@ -22,10 +22,7 @@
         <img class="thumbnail" src="{{ post.image_url }}" alt="" />
         <p>Author: {{ post.author }}</p>
         <p>Votes: {{ post.votes }}</p>
-        <p>
-          <!-- stuff is too big. need to truncate somehow -->
-          <!-- {{ post.description }} -->
-        </p>
+        <p>Description: {{ post.description }}</p>
         <p>Created: {{ post.date_created }}</p>
         <div class=votes>
           <span
