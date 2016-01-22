@@ -7,7 +7,7 @@ app.controller('PostsController', function($scope, $http) {
   })
   .then(function successCallback(postsData) {
       console.log('==============success')
-      // console.log(postsData)
+      console.log(postsData)
       $scope.posts = postsData.data
     }, function errorCallback(response) {
       console.log('==============error')
