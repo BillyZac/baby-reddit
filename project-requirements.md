@@ -14,7 +14,7 @@
 ## Comments
 - x A user can click to view existing comments on a specific post
 - x The number of comments is correctly pluralized
-- A user can add a new comment to a specific post
+- x A user can add a new comment to a specific post
 - The new post form can be toggled on and off
 - Comment form can be toggled on and off
 

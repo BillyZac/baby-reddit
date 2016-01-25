@@ -20,6 +20,6 @@
   </form>
   <div class="post" ng-repeat="comment in post.comments track by $index" >
     <p>{{ comment.content }}</p>
-    <p>By: {{ comment.author }}</p>
+    <p>—{{ comment.author }}</p>
   </div>
 </div>
