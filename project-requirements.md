@@ -20,9 +20,9 @@
 
 - x A user can search through posts
 - x A user can sort posts by votes, date, and title.
-- Animate posts as they are added and removed from the search results.
-- Research Angular animations.See the video for an example implementation.
-- Hint for animations:
+- x Animate posts as they are added and removed from the search results.
+- x Research Angular animations.See the video for an example implementation.
+- x Hint for animations:
   - https://divshot.com/blog/tips-and-tricks/angular-1-2-and-animate-css/
   - http://odetocode.com/blogs/scott/archive/2014/02/25/easy-animations-for-angularjs-with-animate-css.aspx
 - Style the app. It should look better than my implementation.
