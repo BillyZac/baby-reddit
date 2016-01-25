@@ -1,6 +1,13 @@
+<h2>Comments</h2>
+<p>
+  <ng-pluralize count="post.comments.length"
+                 when="{'0': 'No comments yet.',
+                        '1': 'There is one comment.',
+                        'other': 'There are {{ post.comments.length }} comments.'}">
+  </ng-pluralize>
+</p>
 <button type="button" name="button" ng-click="showComments = true" ng-show="!showComments">Show comments</button>
 <div class="comments" ng-show="showComments">
-  <h2>Comments</h2>
   <h3>Make a comment</h3>
   <form class="new-comment" ng-submit="addComment(post)">
     <label for="comment-author">Author</label>

@@ -9,14 +9,17 @@
 - x Posts dynamically reorder according to number of votes
 
 - x A user can create new posts
-- A user cannot create a new post if any of the 4 inputs are blank. Research angular validations. See the video for an example implementation.
-- A user can click to view existing comments on a specific post
-- The number of comments is correctly pluralized
+- x A user cannot create a new post if any of the 4 inputs are blank. Research angular validations. See the video for an example implementation.
+
+## Comments
+- x A user can click to view existing comments on a specific post
+- x The number of comments is correctly pluralized
 - A user can add a new comment to a specific post
 - The new post form can be toggled on and off
 - Comment form can be toggled on and off
+
 - x A user can search through posts
-- A user can sort posts by votes, date, and title.
+- x A user can sort posts by votes, date, and title.
 - Animate posts as they are added and removed from the search results.
 - Research Angular animations.See the video for an example implementation.
 - Hint for animations:
@@ -25,6 +28,6 @@
 - Style the app. It should look better than my implementation.
 
 ## Bonus Features
-- A user can choose to sort ascending or descending
+- x A user can choose to sort ascending or descending
 - A user can favorite posts and view all favorites in a separate tab
 - A user can upload an image (no backend involved)
